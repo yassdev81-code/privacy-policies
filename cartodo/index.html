@@ -13,6 +13,7 @@
     h1 { margin: 0 0 .6rem; font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.15; }
     h2 { margin: 2rem 0 .65rem; font-size: 1.3rem; }
     p { margin: .75rem 0; color: #3f4b60; line-height: 1.7; }
+    ul { margin: .75rem 0; padding-left: 1.35rem; color: #3f4b60; line-height: 1.7; }
     .updated { color: #62708a; }
     a { color: #1745a7; }
   </style>
@@ -20,33 +21,50 @@
 <body>
   <main>
     <h1>Politique de confidentialité — CarTodo</h1>
-    <p class="updated">Dernière mise à jour : 30 août 2026</p>
+    <p class="updated">Dernière mise à jour : 20 septembre 2026</p>
 
     <p>CarTodo est une application de gestion de tâches développée par Yassdev81.</p>
     <p>Cette politique explique comment CarTodo traite vos données.</p>
 
     <h2>1. Données stockées localement</h2>
-    <p>CarTodo stocke vos tâches, catégories, préférences et réglages localement sur votre appareil Android.</p>
-    <p>Ces données ne sont pas envoyées à un serveur exploité par CarTodo.</p>
+    <p>CarTodo stocke vos tâches, catégories, préférences, réglages, destinations enregistrées, coordonnées associées et dernière destination utilisée localement sur votre appareil Android.</p>
+    <p>CarTodo ne propose pas de compte utilisateur ni de backend personnel ou cloud pour stocker ces données.</p>
 
-    <h2>2. Collecte et partage de données</h2>
-    <p>CarTodo ne collecte, ne vend et ne partage aucune donnée personnelle avec des tiers.</p>
-    <p>L’application ne demande pas la création d’un compte utilisateur.</p>
+    <h2>2. Recherche et vérification des destinations</h2>
+    <p>Lorsque vous utilisez volontairement la recherche de lieu ou le bouton de vérification d’adresse, CarTodo peut transmettre à LocationIQ le texte de recherche saisi ou l’adresse que vous souhaitez vérifier.</p>
+    <p>LocationIQ renvoie des suggestions de lieux, d’adresses et de coordonnées géographiques. Ces informations sont utilisées uniquement pour fournir la recherche et la vérification des destinations.</p>
+    <p>Ces fonctions entraînent une transmission des données concernées à LocationIQ, un service tiers. Les échanges réseau avec LocationIQ utilisent HTTPS. LocationIQ peut également traiter des informations techniques de connexion nécessaires au fonctionnement de son service, conformément à sa propre politique de confidentialité.</p>
+    <p>CarTodo n’utilise pas les données de recherche ou de vérification pour la publicité, le profilage, l’analytics ou le suivi comportemental. Pour en savoir plus sur le traitement effectué par ce fournisseur, consultez la <a href="https://locationiq.com/privacy">politique de confidentialité de LocationIQ</a>.</p>
 
-    <h2>3. Android Auto et widget</h2>
-    <p>CarTodo peut afficher certaines tâches dans Android Auto et dans un widget Android. Ces fonctions utilisent les données déjà stockées localement sur votre appareil.</p>
+    <h2>3. Geocoder Android</h2>
+    <p>Si LocationIQ est indisponible ou ne fournit pas de résultat, CarTodo peut utiliser le service <code>Geocoder</code> disponible sur votre appareil Android.</p>
+    <p>Selon l’appareil, ce service peut dépendre d’Android, de Google ou du fabricant ou fournisseur du téléphone. CarTodo ne contrôle pas le traitement réalisé par ce fournisseur. Le fonctionnement du Geocoder, notamment sa disponibilité ou son recours au réseau, dépend de l’appareil et de sa configuration.</p>
 
-    <h2>4. Exportation et restauration</h2>
+    <h2>4. Saisie manuelle</h2>
+    <p>Vous pouvez saisir une adresse manuellement sans la vérifier. Une adresse simplement saisie et enregistrée dans une tâche reste locale tant qu’aucune fonction nécessitant un service externe n’est utilisée.</p>
+
+    <h2>5. Navigation externe et Android Auto</h2>
+    <p>Lorsque vous choisissez <strong>Naviguer</strong>, CarTodo transmet la destination à une application de navigation compatible choisie ou utilisée par le système : les coordonnées GPS si la destination est vérifiée, ou une adresse ou requête textuelle si elle ne l’est pas.</p>
+    <p>CarTodo ne réalise pas lui-même le guidage GPS. Le traitement effectué ensuite par l’application de navigation relève de la politique de confidentialité de cette application.</p>
+    <p>Android Auto affiche uniquement les données nécessaires aux tâches sélectionnées par vous pour la voiture.</p>
+
+    <h2>6. Widget</h2>
+    <p>Le widget Android utilise uniquement les données CarTodo déjà enregistrées localement sur votre appareil.</p>
+
+    <h2>7. Exportation et restauration</h2>
     <p>CarTodo peut permettre d’exporter vos données au format JSON et de restaurer un fichier JSON choisi par vous.</p>
-    <p>Ces actions sont déclenchées manuellement par l’utilisateur. Le fichier exporté reste sous votre contrôle.</p>
+    <p>Ces actions sont déclenchées manuellement par vous. Les fichiers exportés ou sélectionnés restent sous votre contrôle.</p>
 
-    <h2>5. Sécurité</h2>
-    <p>Les données de CarTodo restent sur votre appareil, sauf lorsque vous choisissez vous-même de les exporter, de les sauvegarder ou de les partager.</p>
+    <h2>8. Ce que CarTodo ne fait pas</h2>
+    <p>CarTodo ne vend pas vos données, n’affiche pas de publicité, n’utilise pas de service analytics, ne crée pas de profil publicitaire et ne demande pas de compte utilisateur.</p>
 
-    <h2>6. Modifications de cette politique</h2>
+    <h2>9. Sécurité</h2>
+    <p>Les communications réseau utilisées pour la recherche et la vérification des destinations utilisent HTTPS. Les données principales de CarTodo restent stockées localement sur votre appareil, sauf lorsque vous choisissez d’utiliser une fonction externe, d’exporter, de sauvegarder ou de partager des données.</p>
+
+    <h2>10. Modifications de cette politique</h2>
     <p>Cette politique peut être mise à jour si les fonctionnalités de CarTodo évoluent. La date de dernière mise à jour sera modifiée dans ce cas.</p>
 
-    <h2>7. Contact</h2>
+    <h2>11. Contact</h2>
     <p>Pour toute question relative à cette politique de confidentialité, vous pouvez contacter :</p>
     <p>Équipe CarTodo<br><a href="mailto:ccartodo@gmail.com">ccartodo@gmail.com</a></p>
   </main>
